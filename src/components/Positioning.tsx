@@ -46,22 +46,8 @@ export function Positioning() {
 
           <div className="relative h-[500px] w-full hidden lg:block">
             <FadeIn direction="left" delay={0.3} className="h-full">
-              <div className="relative w-full h-full rounded-3xl bg-slate-900 overflow-hidden shadow-2xl flex items-center justify-center border border-slate-800">
-                {/* Simulated geometric branding asset */}
-                <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-brand-blue/20 blur-3xl rounded-full" />
-                <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-brand-orange/20 blur-3xl rounded-full" />
-                
-                <div className="relative z-10 w-48 h-48 rounded-2xl bg-gradient-to-tr from-brand-blue to-brand-orange shadow-2xl rotate-12 flex items-center justify-center">
-                  <div className="w-40 h-40 rounded-xl bg-slate-900 border border-white/10 flex items-center justify-center p-6 text-center shadow-inner">
-                    <span className="text-white font-display font-bold text-2xl tracking-tighter">
-                      Raon<span className="text-brand-blue">.</span>
-                    </span>
-                  </div>
-                </div>
-                
-                {/* Floating elements */}
-                <div className="absolute top-10 right-10 w-24 h-8 rounded-full bg-white/10 backdrop-blur border border-white/5" />
-                <div className="absolute bottom-10 left-10 w-32 h-8 rounded-full bg-white/10 backdrop-blur border border-white/5" />
+              <div className="relative w-full h-full flex items-center justify-center">
+                <img src="/marcas.png" alt="Marcas fortes são lembradas" className="w-full h-auto object-contain max-h-[500px] drop-shadow-2xl" />
               </div>
             </FadeIn>
           </div>

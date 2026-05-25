@@ -16,7 +16,12 @@ const plans = [
     ],
     footer: "Presença digital para começar a crescer.",
     popular: false,
-    color: "blue"
+    colorClass: "text-[#CD7F32]",
+    borderClass: "border-white/10 hover:border-[#CD7F32]/50",
+    shadowClass: "hover:shadow-[0_0_30px_rgba(205,127,50,0.2)] transition-all duration-300",
+    scaleClass: "",
+    bgClass: "bg-white/5 hover:bg-white/10",
+    buttonClass: "bg-white/10 text-white hover:bg-white/20"
   },
   {
     icon: Zap,
@@ -33,7 +38,12 @@ const plans = [
     ],
     footer: "Mais autoridade, alcance e presença digital.",
     popular: false,
-    color: "orange"
+    colorClass: "text-[#C0C0C0]",
+    borderClass: "border-[#C0C0C0]/50",
+    shadowClass: "shadow-[0_0_30px_rgba(192,192,192,0.3)] transition-all duration-300 hover:shadow-[0_0_40px_rgba(192,192,192,0.5)]",
+    scaleClass: "lg:scale-105 z-10",
+    bgClass: "bg-white/5",
+    buttonClass: "bg-white/10 text-white hover:bg-white/20"
   },
   {
     icon: Crown,
@@ -50,7 +60,12 @@ const plans = [
     ],
     footer: "Transforme sua empresa em uma marca forte.",
     popular: true,
-    color: "gradient"
+    colorClass: "text-[#FFD700]",
+    borderClass: "border-[#FFD700]/60",
+    shadowClass: "shadow-[0_0_40px_rgba(255,215,0,0.4)]",
+    scaleClass: "scale-105 lg:scale-110 z-20",
+    bgClass: "bg-white/10",
+    buttonClass: "bg-gradient-to-r from-[#FFD700] to-[#DAA520] text-slate-900 hover:shadow-lg hover:shadow-[#FFD700]/40"
   }
 ];
 
@@ -75,28 +90,35 @@ export function Plans() {
           </FadeIn>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8 items-center">
+        <div className="grid lg:grid-cols-3 gap-8 items-center mt-12">
           {plans.map((plan, index) => (
             <FadeIn key={index} delay={0.1 + (index * 0.1)}>
               <div 
-                className={`relative rounded-3xl p-8 bg-white/5 backdrop-blur-xl border flex flex-col h-full
-                  ${plan.popular 
-                    ? 'border-brand-orange/50 shadow-2xl shadow-brand-orange/20 scale-105 lg:scale-110 z-10 bg-white/10' 
-                    : 'border-white/10 hover:border-white/20 hover:bg-white/10 transition-colors duration-300'}`}
+                className={`relative rounded-3xl p-8 backdrop-blur-xl border flex flex-col h-full
+                  ${plan.borderClass} ${plan.shadowClass} ${plan.scaleClass} ${plan.bgClass}`}
               >
+                {/* Crown Image for Gold Plan */}
+                {plan.popular && (
+                  <img 
+                    src="/coroa.png" 
+                    alt="Crown" 
+                    className="absolute -top-16 left-1/2 transform -translate-x-1/2 w-24 h-24 object-contain drop-shadow-[0_0_15px_rgba(255,215,0,0.6)] z-30"
+                  />
+                )}
+
                 {/* Popular Badge */}
                 {plan.popular && (
-                  <div className="absolute -top-4 inset-x-0 flex justify-center">
-                    <span className="bg-gradient-to-r from-brand-orange to-brand-orange-light text-white text-xs font-bold px-4 py-1.5 rounded-full tracking-wider uppercase">
+                  <div className="absolute -top-4 inset-x-0 flex justify-center z-20">
+                    <span className="bg-gradient-to-r from-[#FFD700] to-[#DAA520] text-slate-900 border border-[#FFF8DC]/50 text-xs font-extrabold px-4 py-1.5 rounded-full tracking-wider uppercase shadow-lg">
                       Mais Escolhido
                     </span>
                   </div>
                 )}
 
-                <div className="mb-8">
+                <div className="mb-8 mt-4">
                   <div className="flex items-center gap-3 mb-4">
-                    <plan.icon className={`w-6 h-6 ${plan.popular ? 'text-brand-orange' : 'text-brand-blue'}`} />
-                    <span className={`text-xs font-bold tracking-wider uppercase ${plan.popular ? 'text-brand-orange' : 'text-brand-blue-light'}`}>
+                    <plan.icon className={`w-6 h-6 ${plan.colorClass}`} />
+                    <span className={`text-xs font-bold tracking-wider uppercase ${plan.colorClass}`}>
                       {plan.tag}
                     </span>
                   </div>
@@ -108,7 +130,7 @@ export function Plans() {
                   <ul className="space-y-4 mb-8">
                     {plan.features.map((feature, i) => (
                       <li key={i} className="flex items-start gap-3 text-slate-300">
-                        <CheckCircle2 className={`w-5 h-5 shrink-0 ${plan.popular ? 'text-brand-orange' : 'text-brand-blue'}`} />
+                        <CheckCircle2 className={`w-5 h-5 shrink-0 ${plan.colorClass}`} />
                         <span className="text-sm">{feature}</span>
                       </li>
                     ))}
@@ -117,11 +139,7 @@ export function Plans() {
 
                 <div className="mt-auto pt-6 border-t border-white/10">
                   <p className="text-center font-medium text-white/90 italic mb-6">"{plan.footer}"</p>
-                  <a href="#contato" className={`block w-full py-4 rounded-xl text-center font-bold transition-all duration-300
-                    ${plan.popular 
-                      ? 'bg-gradient-to-r from-brand-orange to-brand-orange-light text-white hover:shadow-lg hover:shadow-brand-orange/30' 
-                      : 'bg-white/10 text-white hover:bg-white/20'}`}
-                  >
+                  <a href="#contato" className={`block w-full py-4 rounded-xl text-center font-bold transition-all duration-300 ${plan.buttonClass}`}>
                     Solicitar Proposta
                   </a>
                 </div>

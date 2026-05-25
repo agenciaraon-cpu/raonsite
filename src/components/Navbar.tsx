@@ -17,13 +17,8 @@ export function Navbar() {
   return (
     <header className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white/80 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6'}`}>
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-blue to-brand-orange flex items-center justify-center text-white font-display font-bold text-2xl shadow-lg shadow-brand-blue/20">
-            R
-          </div>
-          <span className="font-display font-bold text-2xl tracking-tight text-slate-900">
-            Raon<span className="text-brand-blue">.</span>
-          </span>
+        <div className="flex items-center">
+          <img src="/logo.png" alt="Agência Raon" className="h-10 w-auto object-contain" />
         </div>
 
         <nav className="hidden md:flex items-center gap-8">

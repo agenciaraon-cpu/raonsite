@@ -5,10 +5,10 @@
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Outfit", ui-sans-serif, system-ui, sans-serif;
   
-  --color-brand-blue: #00A3FF;
-  --color-brand-blue-light: #66C8FF;
-  --color-brand-orange: #FF6B00;
-  --color-brand-orange-light: #FF9E59;
+  --color-brand-blue: #00b4ff;
+  --color-brand-blue-light: #5ce1e6;
+  --color-brand-orange: #ff4800;
+  --color-brand-orange-light: #ff8533;
 }
 
 @layer base {
@@ -18,9 +18,9 @@
 }
 
 .glow-blue {
-  background: radial-gradient(circle, rgba(0,163,255,0.15) 0%, rgba(0,163,255,0) 70%);
+  background: radial-gradient(circle, rgba(0,180,255,0.15) 0%, rgba(0,180,255,0) 70%);
 }
 
 .glow-orange {
-  background: radial-gradient(circle, rgba(255,107,0,0.1) 0%, rgba(255,107,0,0) 70%);
+  background: radial-gradient(circle, rgba(255,72,0,0.1) 0%, rgba(255,72,0,0) 70%);
 }
