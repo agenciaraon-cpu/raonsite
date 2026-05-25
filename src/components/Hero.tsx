@@ -12,7 +12,7 @@ export function Hero() {
       {/* Grid Pattern */}
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9InJnYmEoMCwwLDAsMC4wNSkiLz48L3N2Zz4=')] [mask-image:linear-gradient(to_bottom,white,transparent)]" />
 
-      <div className="max-w-7xl mx-auto px-6 relative z-10 grid lg:grid-cols-2 gap-16 items-center">
+      <div className="max-w-7xl mx-auto px-6 relative z-10 grid lg:grid-cols-2 lg:gap-8 items-center">
         <div className="max-w-2xl">
           <FadeIn>
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-50 border border-slate-100 text-sm font-medium text-slate-600 mb-8 shadow-sm">
@@ -40,20 +40,20 @@ export function Hero() {
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>
               <a href="#diferenciais" className="flex items-center justify-center gap-2 bg-white border border-slate-200 hover:border-brand-blue/30 hover:bg-slate-50 text-slate-700 px-8 py-4 rounded-full text-base font-medium transition-all duration-300">
-                Conhecer a agência
+                Acessar nosso portfólio
               </a>
             </div>
           </FadeIn>
         </div>
 
-        <div className="relative hidden lg:block h-[600px] w-full">
+        <div className="relative hidden lg:block h-[600px] w-full lg:-ml-12 lg:scale-110">
           <motion.div 
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
             className="absolute inset-0 flex items-center justify-center"
           >
-            <img src="/topo.png" alt="Agência Raon" className="w-full h-auto object-contain max-h-[600px]" />
+            <img src="/topo.png" alt="Agência Raon" className="w-full h-auto object-contain max-h-[650px] drop-shadow-2xl" />
           </motion.div>
         </div>
       </div>

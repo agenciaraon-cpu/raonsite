@@ -80,7 +80,7 @@ export function Plans() {
         <div className="text-center max-w-2xl mx-auto mb-16">
           <FadeIn>
             <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-6">
-              Planos Estratégicos
+              Escolha o melhor plano
             </h2>
           </FadeIn>
           <FadeIn delay={0.1}>
@@ -104,15 +104,6 @@ export function Plans() {
                     alt="Crown" 
                     className="absolute -top-16 left-1/2 transform -translate-x-1/2 w-24 h-24 object-contain drop-shadow-[0_0_15px_rgba(255,215,0,0.6)] z-30"
                   />
-                )}
-
-                {/* Popular Badge */}
-                {plan.popular && (
-                  <div className="absolute -top-4 inset-x-0 flex justify-center z-20">
-                    <span className="bg-gradient-to-r from-[#FFD700] to-[#DAA520] text-slate-900 border border-[#FFF8DC]/50 text-xs font-extrabold px-4 py-1.5 rounded-full tracking-wider uppercase shadow-lg">
-                      Mais Escolhido
-                    </span>
-                  </div>
                 )}
 
                 <div className="mb-8 mt-4">
