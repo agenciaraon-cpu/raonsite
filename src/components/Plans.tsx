@@ -5,7 +5,7 @@ const plans = [
   {
     icon: Rocket,
     tag: "START BRONZE",
-    title: "Início Profissional",
+    title: "PLANO START BRONZE",
     description: "Ideal para quem deseja iniciar no digital com profissionalismo.",
     features: [
       "Gestão básica do Instagram",
@@ -26,7 +26,7 @@ const plans = [
   {
     icon: Zap,
     tag: "PRATA PLUS",
-    title: "Crescimento Acelerado",
+    title: "PLANO PRATA PLUS",
     description: "Para empresas que desejam crescer e fortalecer sua marca.",
     features: [
       "Branding & Posicionamento",
@@ -48,7 +48,7 @@ const plans = [
   {
     icon: Crown,
     tag: "GOLD ESSENCIAL",
-    title: "Domínio Digital",
+    title: "PLANO GOLD ESSENCIAL",
     description: "A solução completa para empresas que desejam dominar o digital.",
     features: [
       "Branding premium",
@@ -130,7 +130,7 @@ export function Plans() {
 
                 <div className="mt-auto pt-6 border-t border-white/10">
                   <p className="text-center font-medium text-white/90 italic mb-6">"{plan.footer}"</p>
-                  <a href="#contato" className={`block w-full py-4 rounded-xl text-center font-bold transition-all duration-300 ${plan.buttonClass}`}>
+                  <a href="https://wa.me/5575988644742" target="_blank" rel="noopener noreferrer" className={`block w-full py-4 rounded-xl text-center font-bold transition-all duration-300 ${plan.buttonClass}`}>
                     Solicitar Proposta
                   </a>
                 </div>

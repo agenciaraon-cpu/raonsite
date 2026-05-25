@@ -33,12 +33,12 @@ export function FinalCTA() {
 
         <FadeIn delay={0.3}>
           <div className="flex flex-col sm:flex-row justify-center gap-6">
-            <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" className="group flex items-center justify-center gap-2 bg-white text-slate-900 px-8 py-4 rounded-full text-lg font-bold transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_-10px_rgba(255,255,255,0.5)]">
+            <a href="https://wa.me/5575988644742" target="_blank" rel="noopener noreferrer" className="group flex items-center justify-center gap-2 bg-white text-slate-900 px-8 py-4 rounded-full text-lg font-bold transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_-10px_rgba(255,255,255,0.5)]">
               Entrar em Contato
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
             
-            <a href="mailto:contato@agenciaraon.com" className="flex items-center justify-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-full text-lg font-bold transition-all duration-300 hover:bg-white/20 hover:border-white/30">
+            <a href="https://wa.me/5575988644742" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-full text-lg font-bold transition-all duration-300 hover:bg-white/20 hover:border-white/30">
               <Mail className="w-5 h-5" />
               Solicitar Orçamento
             </a>

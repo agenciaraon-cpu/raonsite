@@ -35,11 +35,11 @@ export function Hero() {
 
           <FadeIn delay={0.3}>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="#contato" className="group flex items-center justify-center gap-2 bg-brand-orange hover:bg-brand-blue text-white px-8 py-4 rounded-full text-base font-medium transition-colors duration-300 hover:shadow-xl hover:shadow-brand-blue/30 shadow-lg shadow-brand-orange/20">
+              <a href="https://wa.me/5575988644742" target="_blank" rel="noopener noreferrer" className="group flex items-center justify-center gap-2 bg-brand-orange hover:bg-brand-blue text-white px-8 py-4 rounded-full text-base font-medium transition-colors duration-300 hover:shadow-xl hover:shadow-brand-blue/30 shadow-lg shadow-brand-orange/20">
                 Falar no WhatsApp
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>
-              <a href="#diferenciais" className="flex items-center justify-center gap-2 bg-white border border-slate-200 hover:border-brand-blue/30 hover:bg-slate-50 text-slate-700 px-8 py-4 rounded-full text-base font-medium transition-all duration-300">
+              <a href="https://www.instagram.com/agenciaraon" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 bg-white border border-slate-200 hover:border-brand-blue/30 hover:bg-slate-50 text-slate-700 px-8 py-4 rounded-full text-base font-medium transition-all duration-300">
                 Acessar nosso portfólio
               </a>
             </div>

@@ -15,13 +15,13 @@ export function Footer() {
               Transformando negócios em marcas fortes. Posicionamento, estratégia e inteligência criativa.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 hover:bg-brand-blue hover:text-white hover:border-brand-blue transition-all">
+              <a href="https://www.instagram.com/agenciaraon" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 hover:bg-brand-blue hover:text-white hover:border-brand-blue transition-all">
                 <Instagram className="w-4 h-4" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 hover:bg-brand-orange hover:text-white hover:border-brand-orange transition-all">
+              <a href="https://wa.me/5575988644742" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 hover:bg-brand-orange hover:text-white hover:border-brand-orange transition-all">
                 <Send className="w-4 h-4" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 hover:bg-white hover:text-slate-900 hover:border-white transition-all">
+              <a href="mailto:ola@agenciaraon.com.br" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 hover:bg-white hover:text-slate-900 hover:border-white transition-all">
                 <Mail className="w-4 h-4" />
               </a>
             </div>
@@ -44,7 +44,7 @@ export function Footer() {
               <li className="text-slate-400">olá@agenciaraon.com.br</li>
             </ul>
             <div className="mt-6">
-              <a href="#contato" className="inline-flex py-2 px-4 rounded-lg bg-white/5 border border-white/10 text-white font-medium hover:bg-white/10 transition-colors">
+              <a href="https://wa.me/5575988644742" target="_blank" rel="noopener noreferrer" className="inline-flex py-2 px-4 rounded-lg bg-white/5 border border-white/10 text-white font-medium hover:bg-white/10 transition-colors">
                 Falar com consultor
               </a>
             </div>

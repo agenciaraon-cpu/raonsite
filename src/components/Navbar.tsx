@@ -29,7 +29,7 @@ export function Navbar() {
         </nav>
 
         <div className="hidden md:block">
-          <a href="#contato" className="group flex items-center gap-2 bg-slate-900 hover:bg-brand-blue text-white px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 hover:shadow-xl hover:shadow-brand-blue/30">
+          <a href="https://wa.me/5575988644742" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-2 bg-slate-900 hover:bg-brand-blue text-white px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 hover:shadow-xl hover:shadow-brand-blue/30">
             Falar no WhatsApp
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </a>
@@ -52,7 +52,7 @@ export function Navbar() {
             <a href="#diferenciais" onClick={() => setIsOpen(false)} className="text-base font-medium text-slate-800">Diferenciais</a>
             <a href="#planos" onClick={() => setIsOpen(false)} className="text-base font-medium text-slate-800">Planos</a>
             <a href="#tecnologia" onClick={() => setIsOpen(false)} className="text-base font-medium text-slate-800">Tecnologia</a>
-            <a href="#contato" onClick={() => setIsOpen(false)} className="inline-flex items-center justify-center gap-2 bg-brand-blue text-white px-6 py-3 rounded-full text-sm font-medium">
+            <a href="https://wa.me/5575988644742" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)} className="inline-flex items-center justify-center gap-2 bg-brand-blue text-white px-6 py-3 rounded-full text-sm font-medium">
               Falar no WhatsApp
             </a>
           </motion.div>
